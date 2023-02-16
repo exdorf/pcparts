@@ -3,8 +3,11 @@ import addErrorHandler from './middleware/error_handlers';
 
 const app: Express = express();
 
-app.get('/', (req: Request, res: Response) => {
-    res.send('Express + TypeScript Server');
+// app.use('/', () => console.log('ROOT'));
+app.use('/api/v1/motherboards', motherboardsRouter);
+
+app.all('*', (req, res, next) => {
+    next(new Error(`Can't find ${req.originalUrl} on this server!`));
 });
 
 app.use(addErrorHandler);
