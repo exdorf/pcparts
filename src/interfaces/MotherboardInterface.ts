@@ -1,5 +1,5 @@
-import { Types } from 'mongoose';
-export interface MotherboardInterface {
+import { Document, Types } from 'mongoose';
+export interface MotherboardInterface extends Document {
     model: string;
     ram_slots: number;
     brand: Types.ObjectId;

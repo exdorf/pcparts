@@ -9,6 +9,9 @@ import { RamSpeedInterface } from './RamSpeedInterface';
 import { CpuGraphicInterface } from './CpuGraphicInterface';
 import { MotherboardInterface } from './MotherboardInterface';
 import { PowerSupplierInterface } from './PowerSupplierInterface';
+import { ResponseInterface } from './ResponseInterface';
+import { ErrorInterface } from './ErrorInterface';
+
 export {
     RamInterface,
     CpuInterface,
@@ -21,4 +24,6 @@ export {
     CpuGraphicInterface,
     MotherboardInterface,
     PowerSupplierInterface,
+    ResponseInterface,
+    ErrorInterface,
 };
