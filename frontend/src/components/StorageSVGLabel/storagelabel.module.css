@@ -1,0 +1,20 @@
+.storagelabel {
+    /* display: none; */
+    color: blue;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+
+:global(#storage):hover ~ .storagelabel {
+    /* display: block; */
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.storagelabel:hover {
+    /* display: block; */
+    opacity: 1;
+    pointer-events: auto;
+}

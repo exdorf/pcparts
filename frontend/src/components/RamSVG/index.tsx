@@ -8,5 +8,5 @@ export default function RamSVG({ selectedRamId }: RamSVGProps) {
     if (!selectedRamId) {
         return null;
     }
-    return <rect x="40" y="50" width="60" height="30" className={styles.ram} />
+    return <rect x="40" y="50" width="60" height="30" className={styles.ram} id="ram"/>
 }

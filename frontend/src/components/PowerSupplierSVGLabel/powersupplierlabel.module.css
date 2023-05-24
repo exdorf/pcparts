@@ -1,0 +1,20 @@
+.powerlabel {
+    /* display: none; */
+    color: blue;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+
+:global(#powersupplier):hover ~ .powerlabel {
+    /* display: block; */
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.powerlabel:hover {
+    /* display: block; */
+    opacity: 1;
+    pointer-events: auto;
+}

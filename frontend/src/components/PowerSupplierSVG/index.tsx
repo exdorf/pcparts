@@ -8,5 +8,5 @@ export default function PowerSupplierSVG({ selectedPowerSupplierId } : PowerSupp
     if (!selectedPowerSupplierId) {
         return null;
     }
-    return  (<rect x="430" y="50" width="40" height="250" className={styles.power} />);
+    return  (<rect x="430" y="50" width="40" height="250" className={styles.power} id="powersupplier"/>);
 }
