@@ -1,6 +1,6 @@
 .selector {
-    grid-area: selector;
     display: grid;
+    width: 50%;
     grid-template-columns: 1fr 4fr;
     grid-auto-rows: 40px;
     grid-gap: 20px;

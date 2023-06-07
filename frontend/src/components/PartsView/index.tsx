@@ -11,16 +11,17 @@ import CPUSVGLabel from '../CPUSVGLabel';
 import GraphicSVGLabel from '../GraphicSVGLabel';
 import PowerSupplierSVGLabel from '../PowerSupplierSVGLabel';
 import StorageSVGLabel from '../StorageSVGLabel';
-
+import CaseSVGInfo from '../CaseSVGInfo';
+import MotherboardSVGInfo from '../MotherboardSVGInfo';
 
 interface PartsViewProps {
     selectedParts: SelectedParts;
 }
 
 function PartsView({ selectedParts }: PartsViewProps) {
+    console.log('!!!', { selectedParts })
 
-    const { selectedRamId, selectedCpuId, selectedGraphicId, selectedPowerSupplierId, selectedStorageId, selectedCaseId } = selectedParts;
-    console.log('!!!', { selectedGraphicId })
+    const { selectedRamId, selectedCpuId, selectedGraphicId, selectedPowerSupplierId, selectedStorageId, selectedCaseId, selectedMotherboardId } = selectedParts;
     
     return (<div className={styles.view}>
         <svg viewBox="0 0 500 500" className={styles.svg}>
@@ -35,9 +36,11 @@ function PartsView({ selectedParts }: PartsViewProps) {
             {selectedRamId && (<RamSVGLabel x={55} y={65} selectedRamId={selectedRamId}/>)}
             {selectedCpuId && (<CPUSVGLabel x={130} y={250} selectedCpuId={selectedCpuId} /> )}
             {selectedGraphicId && <GraphicSVGLabel x={200} y={60} selectedGraphicId={selectedGraphicId} />}
-            {selectedPowerSupplierId && <PowerSupplierSVGLabel x={330} y={60} selectedPowerSupplierId={selectedPowerSupplierId} />}
+            {selectedPowerSupplierId && <PowerSupplierSVGLabel x={310} y={60} selectedPowerSupplierId={selectedPowerSupplierId} />}
             {selectedStorageId && <StorageSVGLabel x={150} y={385} selectedStorageId={selectedStorageId} />}
         </svg>
+        {selectedMotherboardId && <MotherboardSVGInfo selectedMotherboardId={selectedMotherboardId} />}
+        {selectedCaseId && <CaseSVGInfo selectedCaseId={selectedCaseId} />}
        
     </div>)
 }

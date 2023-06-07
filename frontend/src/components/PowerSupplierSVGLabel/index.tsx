@@ -21,7 +21,7 @@ export default function PowerSupplierSVGLabel({ x, y, selectedPowerSupplierId } 
     const { model, brand: { name: brandName }, form_factor: { name: factorName } } = supplier;
     return (
         <g id="powersupplier-label" className={styles.powerlabel}>
-            <rect x={x} y={y} width="180" height="70" stroke="blue" fill="#fff" />
+            <rect x={x} y={y} width="160" height="70" stroke="blue" fill="#fff" />
             <SVGTitle x={x+90} y={y+15} title={model} />
             <SVGText x={x+5} y={y+30} labelName="Brand" labelValue={brandName}/>
             <SVGText x={x+5} y={y+45} labelName="Form Factor" labelValue={factorName}/>
