@@ -8,6 +8,17 @@ const GetRamById = gql`query GetRamById($id: ID) {
         brand {
           name
         }
+        first_word_latency
+        type {
+          name
+        }
+        capacity
+        cas_latency
+        modules
+        speed {
+          name
+        }
+        model
       }
 }
 `;

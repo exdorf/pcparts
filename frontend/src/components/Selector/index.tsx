@@ -7,7 +7,7 @@ interface SelectorProps<ElementType> {
 }
 
 
-function Selector<ElementType extends { _id: string, model: string }>({ options, type, label, onChange, startingText }: SelectorProps<ElementType>) {
+function Selector<ElementType extends { _id?: string, model?: string }>({ options, type, label, onChange, startingText }: SelectorProps<ElementType>) {
     return (<><label htmlFor={type}>{label}</label>
         <select name={label} id={type} onChange={onChange} defaultValue={startingText}>
             <option disabled value={startingText}> -- {startingText} -- </option>

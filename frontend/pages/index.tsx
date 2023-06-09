@@ -31,6 +31,7 @@ export default function Home({ motherboards }: pageProps) {
         <Selector motherboards={motherboards} selectedMotherboardId={selectedMotherboardId} dispatch={dispatch} />
         <PartsView
           selectedParts={selectedParts}
+          dispatch={dispatch}
         />
       </main>
     </>

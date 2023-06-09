@@ -3,7 +3,7 @@ import SecondaryParts from '../SecondaryParts';
 import { Motherboard } from '@/type';
 import styles from './selector.module.css';
 import actions from '@/src/middleware/actionConsts';
-import { Action } from '@/src/middleware/useReducer'
+import { Action } from '@/src/middleware/useReducer';
 
 
 interface componentProps {
