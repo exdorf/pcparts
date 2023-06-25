@@ -19,7 +19,6 @@ interface PartsViewProps {
 }
 
 function PartsView({ selectedParts }: PartsViewProps) {
-    console.log('!!!', { selectedParts })
 
     const { selectedRamId, selectedCpuId, selectedGraphicId, selectedPowerSupplierId, selectedStorageId, selectedCaseId, selectedMotherboardId } = selectedParts;
     

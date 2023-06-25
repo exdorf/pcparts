@@ -1,6 +1,5 @@
 .graphiclabel {
-    /* display: none; */
-    color: blue;
+    color: #00f;
     opacity: 0;
     pointer-events: none;
 
@@ -8,13 +7,11 @@
 
 
 :global(#graphic):hover ~ .graphiclabel {
-    /* display: block; */
     opacity: 1;
     pointer-events: auto;
 }
 
 .graphiclabel:hover {
-    /* display: block; */
     opacity: 1;
     pointer-events: auto;
 }
