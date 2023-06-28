@@ -1,0 +1,17 @@
+.graphiclabel {
+    color: #00f;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+
+:global(#graphic):hover ~ .graphiclabel {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.graphiclabel:hover {
+    opacity: 1;
+    pointer-events: auto;
+}

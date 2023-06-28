@@ -1,0 +1,18 @@
+.ramlabel {
+    color: #f00;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+
+:global(#ram):hover ~ .ramlabel {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.ramlabel:hover {
+    opacity: 1;
+    pointer-events: auto;
+}
+

@@ -1,0 +1,17 @@
+.powerlabel {
+    color: #00f;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+
+:global(#powersupplier):hover ~ .powerlabel {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.powerlabel:hover {
+    opacity: 1;
+    pointer-events: auto;
+}

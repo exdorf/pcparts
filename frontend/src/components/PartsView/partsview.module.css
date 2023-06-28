@@ -5,8 +5,9 @@
 }
 
 .view {
-    grid-area: view;
     padding-top: 10px;
+    width: 50%;
+    text-align: center;
 }
 
 .svgWrapper {
@@ -14,19 +15,8 @@
 }
 
 .svg {
-    width: 100%;
-    height: 100%;
-}
-
-
-.fitting {
-    stroke: #3f3;
-    fill: #9f9;
-}
-
-.notFitting {
-    fill: #f00;
-    opacity: 0.5;
+    width: 60%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .movingLine {

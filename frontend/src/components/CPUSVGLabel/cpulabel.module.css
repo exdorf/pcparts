@@ -1,0 +1,17 @@
+.cpulabel {
+    color: #00f;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+
+:global(#cpu):hover ~ .cpulabel {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.cpulabel:hover {
+    opacity: 1;
+    pointer-events: auto;
+}
